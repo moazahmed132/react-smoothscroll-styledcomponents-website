@@ -1,5 +1,8 @@
 import React from 'react'
 import image from '../../images/svg-1.svg'
+import image2 from '../../images/svg-2.svg'
+import image3 from '../../images/svg-3.svg'
+import image4 from '../../images/svg-4.svg'
 import { Button } from '../ButtonElement'
 import { Column2, ImagWrap, Img, InfoContainer, InfoWrapper, InfoRow, Column1, TopLine, TextWrapper, Heading, Subtitle, BtnWrap, } from './infoElements'
 
@@ -7,6 +10,7 @@ const InfoSection = ({ lightBg, lightText, topLine, id, headLine, darkText, desc
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
+        {console.log(id)}
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
@@ -33,8 +37,34 @@ const InfoSection = ({ lightBg, lightText, topLine, id, headLine, darkText, desc
             </Column1>
             <Column2>
               <ImagWrap>
-                <Img src={image} alt={alt}>
-                </Img>
+                {
+                  (id === 'about') && (
+                    <Img
+                      src={image}
+                      alt={'car'} />
+                  )
+
+                }
+                {
+                  (id === 'discover') && (
+                    <Img
+                      src={image3}
+                      alt={'car'} />
+                  )
+
+                }
+                {
+                  (id === 'signup') && (
+                    <Img
+                      src={image4}
+                      alt={'car'} />
+                  )
+
+                }
+
+                {/* not working */}
+                {/* <Img src={require('../../images/svg-1.svg')} /> */}
+
               </ImagWrap>
             </Column2>
           </InfoRow>
