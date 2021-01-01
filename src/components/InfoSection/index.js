@@ -1,6 +1,5 @@
 import React from 'react'
 import image from '../../images/svg-1.svg'
-import image2 from '../../images/svg-2.svg'
 import image3 from '../../images/svg-3.svg'
 import image4 from '../../images/svg-4.svg'
 import { Button } from '../ButtonElement'
