@@ -1,10 +1,11 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Signin from '../components/Signin'
 
 export const SigninPage = () => {
   return (
     <>
-      <h1>moaz sign</h1>
+      <Signin />
     </>
   )
 }
